@@ -1,4 +1,4 @@
-<!-- {% load crispy_forms_tags %} -->
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -16,7 +16,7 @@
         <div class="move">
           <form class="" method="post">
             {% csrf_token %}
-            <!-- {{ form|crispy }} -->
+            {{ form|crispy }}
             <button type="submit" name="button">Sign Up</button>
           
             <h6> <a href="/accounts/login">login</a> </h6>
