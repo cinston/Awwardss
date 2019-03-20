@@ -1,0 +1,31 @@
+<!-- {% load crispy_forms_tags %} -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>  
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Awwardss</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="rowclass">
+      <div class="col-md-12">
+        <div class="move">
+          <form class="" method="post">
+            {% csrf_token %}
+            <!-- {{ form|crispy }} -->
+            <button type="submit" name="button">Sign Up</button>
+          
+            <h6> <a href="/accounts/login">login</a> </h6>
+
+            
+          </form>
+  
+      </div>
+    </div>
+</body>
+
+</html>
