@@ -19,3 +19,9 @@ def signup(request):
         form = UserCreationForm()
 
     return render(request,'signup.html',locals())
+
+def home_index(request):
+
+    # all = Image.objects.all()
+    
+    return render(request,'home.html')
