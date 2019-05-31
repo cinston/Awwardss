@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'projects',
     'bootstrap4',
     'crispy_forms',
+    'rest_framework',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -104,7 +105,7 @@ else:
 		}
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-
+'rest_framework',
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
@@ -153,4 +154,5 @@ STATICFILES_DIRS = (
 	os.path.join(BASE_DIR, 'static'),
 )
 LOGIN_REDIRECT_URL='homePage'
+LOGOUT_REDIRECT_URL='homePage'
 django_heroku.settings(locals())
