@@ -5,7 +5,7 @@
 #### By **Winston Carlos**
 
 ## Description
-This is an application that will allow a user to post a project he/she has created and get it reviewed by his/her peers based on 3 different criteria:
+A web application that allows you to be in the loop about everything happening in your neighborhood
 ## Link to live site
 
 https://awwwwardsss.herokuapp.com
